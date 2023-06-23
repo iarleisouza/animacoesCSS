@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url('https://subsites-newsroom.imgix.net/sites/pinnews/files/post_main_content_image/2021-04/2019-pinterest-100-newsroom-hobbies_1_3.jpg?ixlib=php-3.3.1&s=68be38d550f2986cd1af5f1162be1496');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: transparent;
+            padding: 35px;
+            backdrop-filter: blur(0px);
+            overflow: hidden;
+            transition: backdrop-filter 1s;
+            border: 2px solid white;
+        }
+         .text {
+            color: white;
+            position: relative;
+            top: 200px;
+            transition: top 2s;
+         }
+         .container:hover .text {
+            top: 0;
+         }
+         .container:hover {
+            backdrop-filter: blur(10px);
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="text">
+        <h1>Bom dia!</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum nemo odio cum velit! Veritatis quis fuga unde. Explicabo eveniet culpa nostrum molestiae, necessitatibus asperiores eius totam illo nam esse. Amet.</p>
+       </div>
+    </div>
+</body>
+</html>

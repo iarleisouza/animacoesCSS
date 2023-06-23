@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            animation-duration: 3s;
+            animation-name: slidein;
+          }
+
+
+          @keyframes slidein {
+            from {
+              margin-left: 100%;
+              width: 300%
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+          
+          p.teste2{
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+          }
+          @keyframes slidein-2 {
+            from {
+              margin-left: 100%;
+              width: 300%;
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+          
+    </style>
+</head>
+<body>
+    <p>
+        A Lagarta e Alice olharam-se por algum tempo em silêncio:
+        finalmente, a Lagarta tirou o narguilé da boca e dirigiu-se a
+        ela com uma voz lânguida e sonolenta.
+        </p>
+      
+
+        <p class="teste2">
+            A Lagarta e Alice olharam-se por algum tempo em silêncio:
+            finalmente, a Lagarta tirou o narguilé da boca e dirigiu-se a
+            ela com uma voz lânguida e sonolenta.
+            </p>
+          
+</body>
+</html>

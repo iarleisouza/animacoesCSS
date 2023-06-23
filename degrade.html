@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradiente</title>
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .box-degrade {
+            width: 100%;
+            padding: 300px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to left, red, blue, yellow);
+            background-size: 500% 100%;
+            animation: degrade-animado 5s infinite alternate;
+            }
+
+            @keyframes degrade-animado {
+                0% {
+                    background-position-x: 0%;
+                }
+                100% {
+                    background-position-x: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="box-degrade">
+        <h1>Olá, mundo</h1>
+    </div>
+</body>
+</html>

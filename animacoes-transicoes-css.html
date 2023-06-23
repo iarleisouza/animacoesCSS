@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transitionBackground {
+            transition: background-color 5s;
+        }
+        .transitionBackground:hover{
+            background-color: red;
+        }
+     .item {
+        width: 100px;
+        height: 100px;
+        
+     }
+     section {
+        display: flex;
+        gap: 10px;
+     }
+     .animationFadeIn {
+        animation: fadeIn 2s linear;
+     }
+
+     .animationFadeInFadeOut {
+        animation: fadeInFadeOut 2s linear infinite;
+     }
+     @keyframes fadeIn{
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+     }
+
+     @keyframes fadeInFadeOut {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.2;
+        }
+        100% {
+            opacity: 1;
+        }
+     }
+     .efeito-4 {
+        background-color: rgb(17, 0, 255);
+        cursor: pointer;
+     }
+     .efeito-4:hover {
+        animation: bounce 2s;
+     }
+     @keyframes bounce {
+        0%, 20%, 60%, 100% {
+            transform: translateY(0);
+         
+        }
+        40% {
+            transform: translateY(-20px);
+        }
+        80% {
+            transform: translateY(-10px);
+        }
+     }
+    </style>
+</head>
+<body>
+    <h1>Transições</h1>
+    <h2>Hover</h2>
+   <section>
+    <div class="item blue transitionBackground">Azul</div>
+    <div class="item yellow transitionBackground">Amarelo</div>
+    <div class="item green transitionSiza">Verde</div>
+    <div class="item animationFadeIn">div</div>
+    <div class="item animationFadeInFadeOut" style="background-color: red;">div</div>
+    <div class="item efeito-4">efeito-4</div>
+   </section>
+</body>
+</html>
